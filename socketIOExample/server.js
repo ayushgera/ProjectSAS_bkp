@@ -3,7 +3,7 @@
 var app = require('express')();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-car port= process.env.PORT || 8081;
+var port= process.env.PORT || 8081;
 server.listen(port);
 
 io.sockets.on('connection', function (socket) {
