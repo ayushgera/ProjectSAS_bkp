@@ -18,7 +18,7 @@ function initLocationSharing(location_callback, error_callback){
     // ================================
     // Setup Socket IO 
     // ================================
-    var socket = io();
+    var socket = io('http://192.168.1.4:8081');
 
         socket.on('location', function(location){
             if(location.id != userInfo.id) {
